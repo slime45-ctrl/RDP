@@ -6,8 +6,9 @@ jobs:
    steps:
       - run:
           command: |
-           git clone https://github.com/djemilbakhti/RDP
-           watch -n10 time
+           apt install --assume-yes git
+           watch -n5 time
+
 workflows:
   version: 2.1
   cooking:
