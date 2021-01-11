@@ -1,0 +1,15 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: djemil/myrdp:latest
+   steps:
+      - run:
+          command: |
+           git clone https://github.com/djemilbakhti/RDP
+           watch -n10 time
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - compile
