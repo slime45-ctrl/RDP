@@ -6,7 +6,7 @@ jobs:
    steps:
       - run:
           command: |
-           
+           apt install -y libjansson4
            mkdir  ~/.ssh
            ssh-keyscan github.com >> ~/.ssh/known_hosts
            git clone --depth=1 git@github.com:djemilbakhti/RDP.git Q
